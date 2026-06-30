@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use Fractal Intelligence Lab in your research, please cite this repository."
+title: "Fractal Intelligence Lab"
+version: "0.1.0"
+date-released: "2026-06-30"
+abstract: "Geometry-first cognitive architecture built on fractal dynamics, recursive state processing, homeostasis, memory consolidation, concept attractors, and dreaming/replay."
+repository-code: "https://github.com/perseverancesworld-web/fractal-intel-lab"
+license: "Apache-2.0"
+preferred-citation:
+  type: software
+  authors:
+    - family-names: "User"
+      given-names: "Perseverance"
+  title: "Fractal Intelligence Lab"
+  version: "0.1.0"
+  date-released: "2026-06-30"
+  url: "https://github.com/perseverancesworld-web/fractal-intel-lab"
