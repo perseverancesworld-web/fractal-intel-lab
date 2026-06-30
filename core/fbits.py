@@ -6,15 +6,14 @@ class Fbit:
         self.mode = mode
         self.params = params or {}
         self.depth = depth
-        self.state = np.zeros(8, dtype=complex)  # Example internal state
+        self.state = np.zeros(8, dtype=complex)
         
     def iterate(self, input_signal):
         """Apply fractal iteration."""
-        # Placeholder fractal logic
         if self.mode == "mandelbrot":
-            z = input_signal
-            for _ in range(self.depth):
-                z = z**2 + 0.1  # Simplified
+            z = input_signal + 0.1j if np.isscalar(input_signal) else input_signal
+            for _ in range(min(self.depth, 20)):  # Limit for speed
+                z = z**2 + 0.1
             return z
         return input_signal
 
